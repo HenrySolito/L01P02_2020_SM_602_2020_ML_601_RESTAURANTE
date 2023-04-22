@@ -7,5 +7,9 @@ namespace L01P02_2020_SM_602_2020_ML_601_RESTAURANTE.Models
         public restauranteDbContext(DbContextOptions options) : base(options) 
         {
         }
+        public Dbset<clientes> clientes { get; set; }
+        public DbSet<motoristas> motoristas { get; set; }
+        public DbSet<pedidos> pedidos { get; set; }
+        public DbSet<platos> platos { get; set; }
     }
 }
