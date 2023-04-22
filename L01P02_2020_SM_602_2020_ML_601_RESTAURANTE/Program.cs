@@ -1,7 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using L01P02_2020_SM_602_2020_ML_601_RESTAURANTE.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDBcontext<>
 
 var app = builder.Build();
 
